@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicy Studios Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="video">Videos</button>
+    <button data-filter="photo">Photos</button>
+    <button data-filter="graphic">Graphics</button>
+</div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="quicy-studio-photos/quicy-studio_logo.jpeg" alt="">
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="portfolio.html">Portfolio</a></li>
+            <li><a href="booking.html">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="portfolio-header">
+        <h1>Our Latest Work</h1>
+        <p>Creative visuals, professional edits, and stunning photography.</p>
+    </header>
+
+    <!-- PORTFOLIO GRID -->
+
+    <div class="desc">
+        <h2>Videos</h2>
+    </div>
+
+    <section class="horizontal-showcase">
+        
+        <div class="h-item" data-category="video">
+            <video controls muted autoplay loop>
+                <source src="videos/video3.mp4">
+            </video>
+            <h3>Video Editing</h3>
+        </div>
+
+        <div class="h-item" data-category="video">
+            <video controls muted autoplay loop>
+                <source src="videos/website.mp4">
+            </video>
+            <h3>Proffesional Website Design</h3>
+        </div>
+
+        <div class="h-item" data-category="video">
+            <video controls muted autoplay loop>
+                <source src="videos/video4.mp4">
+            </video>
+            <h3>Documentry Videos</h3>
+
+        </div>
+
+        <div class="h-item" data-category="videi">
+            <video controls muted autoplay loop>
+                <source src="quicy-studio-photos/music-video.mp4">
+            </video>
+
+            <h3>Music Video Editing</h3>
+        </div>
+
+        <div class="h-item" data-category="video">
+            <video controls muted autoplay loop>
+                <source src="quicy-studio-photos/video1.mp4">
+            </video>
+
+            <h3>Entertainment</h3>
+        </div>
+
+        <div class="h-item" data-category="video">
+            <video controls muted autoplay loop>
+                <source src="videos/video5.mp4">
+            </video>
+
+            <h3>Entertainment</h3>
+        </div>
+
+
+
+
+    </section>
+
+    <div class="desc">
+        <h2>Photos</h2>
+    </div>
+    
+
+    <section class="photos">
+        
+        <div class="h-item" data-category="photo">
+            <img src="videos/img1.jpeg" alt="photo">
+        </div>
+
+          <div class="h-item" data-category="photo">
+            <img src="quicy-studio-photos/hero3.jpeg" alt="">
+        </div>
+
+        <div class="h-item" data-category="photo">
+            <img src="quicy-studio-photos/hero2.jpeg" alt="">
+        </div>
+
+        <div class="p h-item" data-category="photo">
+            <img src="quicy-studio-photos/hero4.jpeg" alt="">
+        </div>
+         
+        <div class=" h-item" data-category="photo">
+            <img src="videos/img2.jpeg" alt="quicy-photo">
+        </div>
+
+        <div class="h-item" data-category="photo">
+            <img src="videos/img3.jpeg" alt="quicy photo">
+        </div>
+
+        <div class=" h-item" data-category="photo">
+            <img src="videos/img4.jpeg" alt="quicy photo">
+        </div>
+
+        
+        <div class=" h-item" data-category="photo">
+            <img src="quicy-studio-photos/card1.jpeg" alt="">
+        </div>
+
+    </section>
+
+    <div class="desc">
+        <h2>Graphics</h2>
+    </div>
+
+    <section class="graphics">
+        
+
+        <div class="h-item" data-category="graphic">
+            <img src="videos/graphic1.jpeg" alt="quicy graphics">
+        </div>
+
+        <div class="h-item" data-category="graphics">
+            <img src="videos/graphic2.jpeg" alt="quicy graphics">
+        </div>
+
+        <div class="h-item" data-category="graphics">
+            <img src="videos/graphic3.jpeg" alt="quivy graphicsw">
+        </div>
+
+        <div class="h-item" data-category="graphic">
+            <img src="videos/graphic4.jpeg" alt="">
+        </div>
+
+        <div class="h-item" data-category="graphic">
+            <img src="videos/graphic5.jpeg" alt="">
+        </div>
+
+        <div class="h-item" data-category="graphic">
+            <img src="videos/graphic6.jpeg" alt="">
+        </div>
+
+
+    </section>
+   
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Want visuals like these?</h2>
+        <a href="booking.html" class="cta-btn">Book a Project</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Quicy Studios</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+const buttons = document.querySelectorAll(".filter-buttons button");
+const items = document.querySelectorAll(".portfolio-item");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        items.forEach(item => {
+            item.style.display =
+                filter === "all" || item.dataset.category === filter
+                ? "block"
+                : "none";
+        });
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    padding-top: 60px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    position: relative;
+  
+}
+
+.nav-links li a {
+    transition: color 0.4s ease;
+    letter-spacing: 0.3s;
+    overflow: hidden;
+}
+
+.nav-links li a::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: gold;
+    letter-spacing: 0px;
+    transform: scalex(0);
+    transform-origin: left;
+    transition: transform 0.4s ease, letter-spacing 0.4s ease;
+    opacity: 0;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+    letter-spacing: 3px;
+    opacity: 1;
+
+}
+
+.nav-links li a:hover {
+    color: transparent;
+}
+
+.nav-links li a.active {
+    background-color: gold;
+    color: #000;
+}
+
+.menu-icon {
+    float: right;
+    align-items: flex-end;
+    width: 40px;
+    display: none;
+
+}
+.logo img{
+   height: 60px;
+   width: auto;
+   display: block;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* HERO-SECTION */
+
+.hero {
+    height: 90vh;
+    background: url(quicy-studio-photos/child.jpeg) center top/ cover no-repeat rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.hero-content h1 {
+   font-size: 3rem;
+   margin-bottom: 10px;
+}
+
+.buttons a {
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+.btn-primary {
+    background: gold;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    transition:  0.3s ease;
+  
+    
+}
+
+
+
+.btn-primary:hover {
+    padding: 15px 27px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.btn-secondary {
+    border: 2px solid gold;
+    color: gold;
+    padding: 12px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    transition:  0.3s ease;
+}
+
+.btn-secondary:hover {
+     padding: 15px 27px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+    
+
+/* SERVICES */
+
+.services {
+    padding: 60px 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-card h3 {
+    color: gold;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    padding: 60px 20px;
+
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.portfolio-item {
+    width: 100%;
+    height: 510px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: #000;
+    transition: 0.3s;
+
+}
+
+.portfolio-item img:hover {
+    height: 520px;
+    width: 520px;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    padding: 60px 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* CTA */
+ .cta {
+    padding: 60px 20px;
+    text-align: center;
+ }
+
+ .cta a {
+  padding: 12px 25px;
+  background: gold;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+
+ .cta a:hover {
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+   letter-spacing: 0.5px;
+ }
+
+ /* FOOTER */
+
+ footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+ }
+
+ .socials a {
+    margin: 0 10px;
+    height: 60px;
+    width: 35px;
+    text-decoration: none;
+    color: gold;
+    font-size: 25px;
+    transition:  0.4s ease;
+ }
+
+
+ /* MEDIA QURIES */
+
+
+ /* MOBILE VERSION */
+
+ @media screen and (max-width: 599px)  {
+    .logo {
+        width: 110px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        gap: 15px;
+        
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid#eee;
+        font-size: 17px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero {
+        margin-top: 20px;
+        width: 100%;
+    }
+ 
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero {
+        padding: 30px 16px;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .hero button {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+/* SERVICES SECTION */
+.services {
+    padding: 16px;
+    width: 100%;
+
+}
+   .service-card {
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+   }
+
+   .services-card h3 {
+    font-size: 18px;
+   }
+
+   .services-card p {
+    font-size: 14px;
+   }
+
+   .services-grid {
+    display: block;
+    align-items: center;
+   }
+
+   /* POTFOLIO */
+   .portfolio {
+    gap: 14px;
+    padding: 16px 0;
+    width: 100%;
+   }
+
+   .portfolio-item {
+    min-width: 85%;
+    height: auto;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+   }
+   
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .cta {
+        padding: 20px 16px;
+    }
+   
+     .about {
+        line-height: 25px;
+     }
+
+     .testimonials {
+        width: 95%;
+        align-items: center;
+     }
+    
+     .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+     }
+
+ }
+ 

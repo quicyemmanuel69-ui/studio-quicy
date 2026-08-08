@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Quicy Studios</title>
+
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    
+    <!-- NAVIGATION -->
+     <nav class="navbar">
+        <div class="logo">
+            <img src="quicy-studio-photos/quicy-studio_logo.jpeg" alt="">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="home.html" data-text="Home">Home</a></li>
+            <li><a  href="services.html" data-text="Services">Services</a></li>
+            <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
+            <li><a class="active" href="booking.html" data-text="Contact">Contact</a></li>
+        </ul>
+         <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+     </nav>
+
+    <!-- CONTACT HEADER -->
+     <header>
+        <h1>Contact  & Booking</h1>
+        <p>Reach out to Quicy Studios for inquires, bookings, or collaborations.</p>
+     </header>
+
+
+    <!-- CONTACT SECTION -->
+     <section class="contact-section">
+        <div class="contact-info">
+            <h2>Studio Information</h2>
+            <p><strong>Email:</strong>quicyemmanuel69@gmail.com</p>
+            <p><strong>Phone:</strong>+23233447540</p>
+            <p><strong>Location:</strong></p>
+
+            <a class="whatsapp-btn" href="https://wa.me/23233447540" target="_blank">Message on Whatsapp</a>
+        </div>
+
+        <form class="contact-form">
+            <h2>Send a Message</h2>
+
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Youe Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+     </section>
+
+     <!-- BOOKING SECTION -->
+      <section class="booking-section">
+        <h2>Book a Project</h2>
+
+        <form class="booking-form">
+            <select required>
+                <option value="">Select Service</option>
+                <option>Video Editing</option>
+                <option>Photo Design</option>
+                <option>Graphic Design</option>
+                <option>Video Coverage</option>
+                <option>Other Services</option>
+            </select>
+
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Phone Number" required>
+
+            <textarea placeholder="Project Details"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+      </section>
+
+      <!-- FOOTER -->
+       <footer>
+        <p>&copy;2026 Quicy Studios</p>
+        <div class="socials">
+                <a target="_blank" href="https://wa.me/23233447540"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="https://vm.tiktok.com/ZS9rGkccWksnc-DYJC8/"><i class="fa-brands fa-tiktok"></i></a>
+                <a target="_blank" href="https://facebook.com/groups/1586914963042728/?mibextid=rS40aB7S9Ucbxw6v">
+                <i class="fa-brands fa-facebook"></i>
+
+                </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+       </footer>
+
+        <!-- MOBILE MENU SCRIPT -->
+          <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+          </script>
+
+</body>
+</html>

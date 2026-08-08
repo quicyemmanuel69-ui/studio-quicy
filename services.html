@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicy Studio Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+      <!-- NAVIGATION -->
+     <nav class="navbar">
+        <div class="logo">
+            <img src="quicy-studio-photos/quicy-studio_logo.jpeg" alt="">
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html" data-text="Home">Home</a></li>
+            <li><a class="active" href="services.html" data-text="Services">Services</a></li>
+            <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
+            <li><a href="booking.html" data-text="Contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span> 
+            <span></span>
+        </div>
+     </nav>
+
+     <!-- HEADER -->
+      <header class="services-header">
+        <h1>Our Services</h1>
+        <p>High-quality creative solutions for brands, businesses, and individuals.</p>
+      </header>
+
+      <!-- SERVICES-GRID -->
+       <section class="services-section" >
+        <div class="service-card">
+             <img src="quicy-studio-photos/vid-pic1.jpeg" alt="">
+            <h3>Proffesional Video Editing</h3>
+            <p>Ads, music videos, documentaries, promos, and cinematic edits.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="quicy-studio-photos/card2.jpeg" alt="Quicy-photo">
+            <h3>Photo Design & Retoching</h3>
+              <p>Manipulation, retoching, product photography, and creative composite. </p>
+        </div>
+
+        <div class="service-card">
+            <img src="quicy-studio-photos/card1.jpeg" alt="quivy photo">
+            <h3>Video Coverage</h3>
+            <p>Events, weddings, coporate shoots, and live coverage.</p>
+        </div>
+
+        <div class="service-card">
+            <video controls>
+                <source src="quicy-studio-photos/web1.mp4">
+            </video>
+            <h3>Website Design</h3>
+            <p>Modern, responsive websites built with clean layouts, fast performance, and strong branding.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="quicy-studio-photos/quicy-studio_logo.jpeg" alt="graphic">
+            <h3>Graphic Design</h3>
+            <p>Logos, posters, flyers, branding kits, and social media graphics.</p>
+        </div>
+
+        <div class="service-card">
+            <video controls>
+                <source src="quicy-studio-photos/music-video.mp4">
+            </video>
+            <h3>Music Video Editing</h3>
+            <p>We create proffisional musical videos.</p>
+        </div>
+        
+       </section>
+
+       <!-- CTA -->
+        <section class="cta">
+            <h2>Ready to Start Your Project</h2>
+            <a href="booking.html" class="cta-btn">Book a Project</a>
+        </section>
+
+        <!-- FOOTER -->
+         <footer>
+            <p>&copy; 2026 Quicy Studios - All Rights Reserved</p>
+
+               <div class="socials">
+                <a target="_blank" href="https://wa.me/23233447540"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="https://vm.tiktok.com/ZS9rGkccWksnc-DYJC8/"><i class="fa-brands fa-tiktok"></i></a>
+                <a target="_blank" href="https://facebook.com/groups/1586914963042728/?mibextid=rS40aB7S9Ucbxw6v">
+                <i class="fa-brands fa-facebook"></i>
+
+                </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+         </footer>
+
+         <!-- MOBILE MENU SCRIPT -->
+          <script>
+            const hamburger =document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active')
+            });
+          </script>
+
+
+</body>
+</html>
